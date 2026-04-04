@@ -1,4 +1,4 @@
-import { ArrowDown, Mail, MapPin, Phone } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import mazenPhoto from "@/assets/mazen-photo.png";
 import heroBg from "@/assets/hero-bg.jpg";
 
@@ -60,6 +60,26 @@ const HeroSection = () => {
             </span>
             <a href="mailto:mazen.mohamed.eg12@gmail.com" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
               <Mail size={14} className="text-primary" /> mazen.mohamed.eg12@gmail.com
+            </a>
+          </div>
+
+          {/* Social Links */}
+          <div className="flex gap-4 mt-6 justify-center lg:justify-start animate-fade-up animate-fade-up-delay-4">
+            <a
+              href="https://www.linkedin.com/in/mazen-mohamed-h/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary hover:bg-primary/20 transition-colors"
+            >
+              <Linkedin size={18} />
+            </a>
+            <a
+              href="https://github.com/mazen-mohamed2"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary hover:bg-primary/20 transition-colors"
+            >
+              <Github size={18} />
             </a>
           </div>
         </div>
