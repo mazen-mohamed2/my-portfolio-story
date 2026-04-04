@@ -1,20 +1,22 @@
 import { useInView } from "@/hooks/useInView";
 
 const skills = [
-  { name: "HTML5", level: 95 },
-  { name: "CSS3", level: 92 },
-  { name: "JavaScript", level: 93 },
-  { name: "React.js", level: 95 },
-  { name: "TypeScript", level: 88 },
-  { name: "Next.js", level: 85 },
-  { name: "GraphQL", level: 78 },
-  { name: "Tailwind CSS", level: 90 },
-  { name: "MUI", level: 85 },
-  { name: "Node.js", level: 80 },
-  { name: "Express", level: 78 },
-  { name: "MongoDB", level: 75 },
-  { name: "Git / GitHub", level: 90 },
-  { name: "GoLang", level: 60 },
+  { name: "HTML5", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+  { name: "CSS3", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+  { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+  { name: "React.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+  { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+  { name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
+  { name: "GraphQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" },
+  { name: "Tailwind CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" },
+  { name: "MUI", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" },
+  { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+  { name: "Express", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
+  { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+  { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+  { name: "GoLang", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" },
+  { name: "Redux", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" },
+  { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
 ];
 
 const SkillsSection = () => {
@@ -30,23 +32,24 @@ const SkillsSection = () => {
           Technologies and tools I work with daily to build modern web applications.
         </p>
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-6 max-w-5xl mx-auto">
           {skills.map((skill, i) => (
             <div
               key={skill.name}
-              className={`glass-card rounded-xl p-5 hover-lift ${inView ? "animate-fade-up" : "opacity-0"}`}
+              className={`glass-card rounded-xl p-4 flex flex-col items-center gap-3 hover-lift group ${inView ? "animate-fade-up" : "opacity-0"}`}
               style={{ animationDelay: `${i * 0.05}s` }}
             >
-              <div className="flex justify-between items-center mb-3">
-                <span className="font-medium text-sm">{skill.name}</span>
-                <span className="text-xs text-primary font-semibold">{skill.level}%</span>
-              </div>
-              <div className="w-full h-2 rounded-full bg-muted overflow-hidden">
-                <div
-                  className="h-full rounded-full bg-gradient-primary transition-all duration-1000 ease-out"
-                  style={{ width: inView ? `${skill.level}%` : "0%" }}
+              <div className="w-12 h-12 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                <img
+                  src={skill.icon}
+                  alt={skill.name}
+                  className="w-10 h-10 object-contain"
+                  loading="lazy"
                 />
               </div>
+              <span className="text-xs font-medium text-muted-foreground group-hover:text-foreground transition-colors text-center leading-tight">
+                {skill.name}
+              </span>
             </div>
           ))}
         </div>
