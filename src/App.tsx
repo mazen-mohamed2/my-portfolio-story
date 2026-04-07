@@ -10,6 +10,7 @@ import { Analytics } from '@vercel/analytics/react';
 const queryClient = new QueryClient();
 
 const App = () => (
+  <>
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
@@ -24,6 +25,7 @@ const App = () => (
     </TooltipProvider>
     <Analytics/>
   </QueryClientProvider>
+  </>
 );
 
 export default App;
