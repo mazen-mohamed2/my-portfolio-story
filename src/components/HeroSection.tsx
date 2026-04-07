@@ -49,7 +49,7 @@ const HeroSection = () => {
   download="Mazen_Mohamed_CV.pdf" // الاسم الذي سيظهر للمستخدم عند التحميل
   className="px-6 py-3 border border-border rounded-lg font-medium text-sm text-foreground hover:border-primary/50 transition-colors flex items-center gap-2"
 >
-  Download CV
+  Download CV 
 </a>
           </div>
 
