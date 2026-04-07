@@ -1,5 +1,5 @@
 import { ArrowDown, Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
-import mazenPhoto from "@/assets/mazen-photo.png";
+import mazenPhoto from "@/assets/photo_5938126061973474827_w.jpg";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {

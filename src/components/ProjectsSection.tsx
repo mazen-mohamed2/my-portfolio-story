@@ -4,13 +4,13 @@ import { ExternalLink } from "lucide-react";
 const projects = [
   { name: "Lebara SA", url: "https://lebara.sa", desc: "Telecom platform — full-stack enhancements, payments, VAS pages" },
   { name: "Red Bull Mobile SA", url: "https://redbullmobile.sa", desc: "Telecom platform — auth system rebuild, multi-SIM support" },
-  { name: "SafeRoad", url: "https://track.v6.saferoad.net", desc: "IoT fleet management & cold chain monitoring system" },
-  { name: "Dnndon", url: "https://dnndon.com", desc: "Full website design, development, and dashboard" },
+  { name: "SafeRoad", url: "https://track.saferoad.net/auth/signin", desc: "IoT fleet management & cold chain monitoring system" },
+  { name: "EatEasy", url: "https://admin.eateasy.ae/", desc: "Full website design, development, and dashboard" },
   { name: "Frogpool", url: "https://frogpool.ae", desc: "Freelance — complete web development project" },
-  { name: "Color Point", url: "https://color-point1.com", desc: "Freelance — website design and development" },
-  { name: "A7jiz", url: "https://a7jiz.com", desc: "Freelance — booking and appointment platform" },
-  { name: "Natal Beauty", url: "https://natalbeauty.com", desc: "Freelance — beauty industry web application" },
-  { name: "Barber Look", url: "https://barberlook-sa.com", desc: "Freelance — salon management platform" },
+  { name: "karaz", url: "https://karaz.app/ar/", desc: "Freelance — website design and development" },
+  { name: "The Grounds", url: "https://thegrounds.com.au/", desc: "Freelance — booking and appointment platform" },
+  { name: "Thathairtho", url: "https://thathairtho.me/", desc: "Freelance — beauty industry web application" },
+  { name: "Evo Smart", url: "https://evosmart.co/", desc: "Freelance — management platform" },
 ];
 
 const ProjectsSection = () => {

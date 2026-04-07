@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-
+import mazen from "@/assets/تصميم_بدون_عنوان-removebg-preview.png"
 const navLinks = [
   { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
@@ -27,7 +27,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex items-center justify-between px-6">
         <a href="#" className="text-2xl font-heading font-bold text-gradient">
-          MM
+          <img src={mazen} alt="ll" className="w-25 h-10"/>
         </a>
 
         {/* Desktop */}

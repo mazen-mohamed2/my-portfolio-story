@@ -2,9 +2,9 @@ import { useInView } from "@/hooks/useInView";
 import { Briefcase, Code, GraduationCap, Users } from "lucide-react";
 
 const stats = [
-  { icon: Briefcase, label: "Years Experience", value: "6+" },
+  { icon: Briefcase, label: "Years Experience", value: "8+" },
   { icon: Code, label: "Projects Delivered", value: "20+" },
-  { icon: Users, label: "Teams Led", value: "3+" },
+  { icon: Users, label: "Teams Led", value: "18+" },
   { icon: GraduationCap, label: "Education", value: "B.Com" },
 ];
 
@@ -50,7 +50,7 @@ const AboutSection = () => {
           <h3 className="text-xl font-heading font-semibold mb-4 mt-8">Languages</h3>
           <div className="flex gap-4">
             <span className="px-4 py-2 rounded-lg bg-primary/10 text-sm font-medium">Arabic — Native</span>
-            <span className="px-4 py-2 rounded-lg bg-accent/10 text-sm font-medium">English — Intermediate</span>
+            <span className="px-4 py-2 rounded-lg bg-accent/10 text-sm font-medium">English — professional</span>
           </div>
         </div>
       </div>
