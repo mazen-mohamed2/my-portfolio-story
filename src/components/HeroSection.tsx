@@ -1,6 +1,7 @@
 import { ArrowDown, Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import mazenPhoto from "@/assets/photo_5938126061973474827_w.jpg";
 import heroBg from "@/assets/hero-bg.jpg";
+import mazen from "@/assets/Mazen_Mohamed_cv.pdf";
 
 const HeroSection = () => {
   return (
@@ -43,12 +44,13 @@ const HeroSection = () => {
             >
               Get in Touch
             </a>
-            <a
-              href="#experience"
-              className="px-6 py-3 border border-border rounded-lg font-medium text-sm text-foreground hover:border-primary/50 transition-colors"
-            >
-              View Experience
-            </a>
+          <a
+  href={mazen} // تأكد أن المسار يطابق اسم الملف في مجلد public
+  download="Mazen_Mohamed_CV.pdf" // الاسم الذي سيظهر للمستخدم عند التحميل
+  className="px-6 py-3 border border-border rounded-lg font-medium text-sm text-foreground hover:border-primary/50 transition-colors flex items-center gap-2"
+>
+  Download CV
+</a>
           </div>
 
           <div className="flex flex-wrap gap-6 mt-8 justify-center lg:justify-start animate-fade-up animate-fade-up-delay-4">
