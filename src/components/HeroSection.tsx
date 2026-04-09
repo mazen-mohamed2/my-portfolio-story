@@ -7,7 +7,7 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden mt-[4rem] sm:mt-5"
     >
       {/* Background */}
       <div

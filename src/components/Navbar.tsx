@@ -26,9 +26,13 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between px-6">
-        <a href="#" className="text-2xl font-heading font-bold text-gradient">
-          <img src={mazen} alt="ll" className="w-25 h-10"/>
-        </a>
+       <a href="#" className="flex items-center">
+  <img
+    src={mazen}
+    alt="logo"
+    className="h-8 sm:h-9 md:h-10 w-auto"
+  />
+</a>
 
         {/* Desktop */}
         <ul className="hidden md:flex items-center gap-8">
